@@ -1,0 +1,42 @@
+# 2️⃣ Customer Segmentation (Basic RFM in Excel / Pandas) – Label Customers A / B / C
+
+# 🎯 Objective
+# The objective of this project is to divide customers into groups based on their buying behavior using RFM analysis (Recency, Frequency, Monetary).
+# By using only coding, the project labels customers as A, B, or C so businesses can easily identify best customers, average customers, and low-value customers.
+
+# 📌 Problem Statement
+# Businesses collect transaction-level data such as CustomerID, PurchaseDate, TransactionAmount, OrderID, ProductInformation, and Location,
+# but this data is often stored in raw form and not used effectively to understand customer value.
+#
+# Without analyzing this transaction data, businesses cannot clearly identify which customers purchase frequently, which customers spend more,
+# and which customers have become inactive over time. This results in poor marketing decisions, weak customer retention strategies,
+# and inefficient use of business resources.
+#
+# In this project, we use a real-world transaction dataset to build a fully programmatic customer segmentation system using RFM analysis.
+# Using Python and Pandas, the transaction data is processed to calculate:
+# - Recency: the number of days since a customer's most recent purchase using PurchaseDate
+# - Frequency: the total number of orders placed by a customer using OrderID
+# - Monetary: the total amount spent by a customer using TransactionAmount
+#
+# Based on these calculated RFM values, customers are automatically segmented and labeled as:
+# - A – High-value and loyal customers who purchase recently, frequently, and spend more
+# - B – Medium-value customers with moderate purchase behavior
+# - C – Low-value or inactive customers with low engagement
+#
+# The entire segmentation process is done using code only, ensuring the solution is reproducible, scalable,
+# and suitable for real-world business datasets, without any manual Excel-based calculations.
+
+# 🛠️ Programmatic Skills Required (Coding Only)
+# - Python programming
+# - Pandas for data cleaning and analysis
+# - Working with dates and time in code
+# - GroupBy and aggregation logic
+# - Writing functions for RFM calculation
+# - Conditional logic (if–else rules)
+# - Quantile-based scoring using code
+# - Data visualization using Matplotlib or Seaborn
+# - Running code in Jupyter Notebook, VS Code, or Google Colab
+# - Basic Git and GitHub usage
+#
+# ⚠️ Note:
+# This project is 100% coding-based. Excel is used only to read or save data, not for calculations.

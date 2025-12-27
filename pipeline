@@ -1,0 +1,169 @@
+# =========================================================
+# Customer Segmentation (Basic RFM) – VERY CLEAR PIPELINE
+# Beginner-friendly | Step-by-step | File-by-file
+# =========================================================
+
+# Dataset Used:
+# data/raw/transactions.csv
+# Columns:
+# CustomerID, PurchaseDate, TransactionAmount,
+# ProductInformation, OrderID, Location
+
+# =========================================================
+# STEP 1: DOWNLOAD & PLACE THE DATASET
+# =========================================================
+# What you do:
+# - Download the Kaggle dataset
+# - Place the file in the correct folder
+#
+# Why this step:
+# - This file is the starting point of the entire project
+#
+# Files used / modified:
+# - data/raw/transactions.csv
+# - README.md (mention dataset source)
+
+# =========================================================
+# STEP 2: OPEN & UNDERSTAND THE DATA
+# =========================================================
+# What you do:
+# - Open the CSV file
+# - Check column names and sample rows
+# - Confirm required columns exist
+#
+# Why this step:
+# - To understand what data is available for analysis
+#
+# Files used / modified:
+# - notebooks/01_data_exploration.ipynb
+
+# =========================================================
+# STEP 3: LOAD DATA USING PYTHON
+# =========================================================
+# What you do:
+# - Load transactions.csv using Pandas
+# - Convert PurchaseDate to datetime format
+# - Ensure TransactionAmount is numeric
+#
+# Why this step:
+# - Correct data types are required for calculations
+#
+# Files used / modified:
+# - src/data_loading.py
+# - notebooks/01_data_exploration.ipynb
+
+# =========================================================
+# STEP 4: CLEAN THE DATA
+# =========================================================
+# What you do:
+# - Remove rows with missing CustomerID
+# - Remove rows with missing PurchaseDate
+# - Remove rows with zero or negative TransactionAmount
+# - Remove duplicate OrderID values
+#
+# Why this step:
+# - Clean data gives correct RFM results
+#
+# Files used / modified:
+# - src/preprocessing.py
+# - data/processed/cleaned_transactions.csv
+# - notebooks/02_rfm_analysis.ipynb
+
+# =========================================================
+# STEP 5: CALCULATE RFM VALUES
+# =========================================================
+# What you do:
+# - Choose a reference date (latest PurchaseDate + 1 day)
+# - Calculate:
+#   Recency   = days since last purchase per customer
+#   Frequency = total orders per customer
+#   Monetary  = total money spent per customer
+#
+# Why this step:
+# - These values describe customer behavior
+#
+# Files used / modified:
+# - src/rfm_calculation.py
+# - notebooks/02_rfm_analysis.ipynb
+
+# =========================================================
+# STEP 6: SCORE RFM VALUES
+# =========================================================
+# What you do:
+# - Split Recency, Frequency, Monetary into quantiles
+# - Assign numeric scores using code
+#
+# Why this step:
+# - Scoring makes customers easy to compare
+#
+# Files used / modified:
+# - src/scoring.py
+# - notebooks/02_rfm_analysis.ipynb
+
+# =========================================================
+# STEP 7: LABEL CUSTOMERS (A / B / C)
+# =========================================================
+# What you do:
+# - Combine R, F, M scores
+# - Apply simple rules:
+#   A = high value customers
+#   B = medium value customers
+#   C = low value or inactive customers
+#
+# Why this step:
+# - Converts numbers into business-friendly labels
+#
+# Files used / modified:
+# - src/segmentation.py
+# - data/processed/rfm_table.csv
+# - notebooks/02_rfm_analysis.ipynb
+
+# =========================================================
+# STEP 8: CREATE VISUALS
+# =========================================================
+# What you do:
+# - Plot Recency distribution
+# - Plot Frequency distribution
+# - Plot Monetary distribution
+# - Plot A / B / C customer counts
+#
+# Why this step:
+# - Visuals help understand results quickly
+#
+# Files used / modified:
+# - src/visualization.py
+# - outputs/charts/recency_distribution.png
+# - outputs/charts/frequency_distribution.png
+# - outputs/charts/monetary_distribution.png
+# - outputs/charts/segment_counts.png
+
+# =========================================================
+    # STEP 9: WRITE INSIGHTS
+    # =========================================================
+    # What you do:
+    # - Analyze RFM table
+    # - Write simple business insights
+    #
+    # Why this step:
+    # - Shows the real-world value of the project
+    #
+    # Files used / modified:
+    # - outputs/reports/rfm_insights.txt
+    # - README.md
+
+# =========================================================
+# STEP 10: FINAL RUN & CHECK
+# =========================================================
+# What you do:
+# - Run all scripts or notebooks from start to end
+# - Check if all outputs are generated correctly
+#
+# Why this step:
+# - Confirms the project works fully
+#
+# Files used / modified:
+# - notebooks/01_data_exploration.ipynb
+# - notebooks/02_rfm_analysis.ipynb
+# - README.md
+
+# ===================== END =====================

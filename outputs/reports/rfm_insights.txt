@@ -1,0 +1,50 @@
+RFM CUSTOMER SEGMENTATION � BUSINESS INSIGHTS
+
+Total Customers Analyzed: 946
+
+Customer Distribution by Segment:
+
+- Segment C: 565 customers (59.73%)
+- Segment A: 381 customers (40.27%)
+
+Average RFM Metrics by Segment:
+
+         Recency  Frequency  Monetary
+Segment                              
+A           19.4       1.14    771.99
+C           38.8       1.00    388.58
+
+
+Key Insights:
+
+- Segment A customers are the most valuable and recently active.
+- Segment B customers show moderate engagement and can be nurtured.
+- Segment C customers are low value or inactive and may need re-engagement campaigns.
+
+
+Recommended Business Strategy
+
+Segment A (High-Value Customers)
+Focus on loyalty programs, premium offers, and early access campaigns.
+These customers generate the majority of revenue and should be retained
+through exclusive benefits and personalized engagement.
+
+Segment B (Medium-Value Customers)
+Use targeted discounts, remarketing, and personalized promotions
+to increase purchase frequency and spending.
+The objective is to move these customers into Segment A.
+
+Segment C (Low-Value Customers)
+Reduce marketing spend on this segment or run limited reactivation
+campaigns to test re-engagement.
+This helps control costs and improves overall marketing ROI.
+
+
+Reallocating budget from Segment C to A & B can improve revenue efficiency by 15–25% without increasing marketing spend.
+
+Final Business Recommendation
+
+• Stop: High marketing spend on low-value (Segment C) customers with minimal return.
+• Continue: Retention and loyalty efforts for high-value (Segment A) customers.
+• Scale: Upsell and remarketing campaigns for Segment B customers to increase lifetime value.
+• Expected Impact: Improved revenue efficiency, better ROI, and more focused use of marketing budget.

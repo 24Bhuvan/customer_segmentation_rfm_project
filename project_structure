@@ -1,0 +1,36 @@
+customer-segmentation-rfm/
+├── data/
+│   ├── raw/
+│   │   └── transactions.csv          # Original Kaggle dataset
+│   │                                  # Columns:
+│   │                                  # CustomerID, PurchaseDate, TransactionAmount,
+│   │                                  # ProductInformation, OrderID, Location
+│   │
+│   └── processed/
+│       ├── cleaned_transactions.csv   # Cleaned and validated transaction data
+│       └── rfm_table.csv              # Final RFM values with A/B/C labels
+│
+├── notebooks/
+│   ├── 01_data_exploration.ipynb      # Dataset overview and basic checks
+│   └── 02_rfm_analysis.ipynb          # End-to-end RFM analysis and segmentation
+│
+├── src/
+│   ├── data_loading.py                # Load CSV and handle data types
+│   ├── preprocessing.py               # Clean data (dates, nulls, invalid amounts)
+│   ├── rfm_calculation.py             # Calculate Recency, Frequency, Monetary values
+│   ├── scoring.py                     # Assign RFM scores using quantiles
+│   ├── segmentation.py                # Label customers as A / B / C
+│   └── visualization.py               # Create charts for RFM and segments
+│
+├── outputs/
+│   ├── charts/
+│   │   ├── recency_distribution.png   # Recency value distribution
+│   │   ├── frequency_distribution.png # Frequency value distribution
+│   │   ├── monetary_distribution.png  # Monetary value distribution
+│   │   └── segment_counts.png         # A / B / C customer count
+│   │
+│   └── reports/
+│       └── rfm_insights.txt            # Business insights from RFM analysis
+│
+├── requirements.txt                   # Project dependencies
+└── README.md                          # Project overview and run instructions
