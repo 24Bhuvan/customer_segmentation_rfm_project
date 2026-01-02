@@ -31,6 +31,7 @@ The pipeline processes raw transaction data, generates RFM metrics, segments cus
 
 ## 📁 Project Structure
 
+```bash
 customer_segmentation_rfm_project/
 │
 ├── data/
@@ -65,7 +66,7 @@ customer_segmentation_rfm_project/
 │
 ├── README.md
 └── requirements.txt
-
+```
 
 ---
 
@@ -149,10 +150,13 @@ pip install -r requirements.txt
 ```bash
 notebooks/01_data_exploration.ipynb
 notebooks/02_rfm_analysis.ipynb
+```
 OR run scripts
+```bash
 python src/data_loading.py
 python src/preprocessing.py
 python src/rfm_calculation.py
 python src/scoring.py
 python src/segmentation.py
 python src/visualization.py
+```
