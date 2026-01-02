@@ -144,7 +144,9 @@ outputs/reports/rfm_insights.txt
 ### Step 1: Install dependencies
 ```bash
 pip install -r requirements.txt
-Step 2: Run notebooks
+```
+### Step 2: Run notebooks
+```bash
 notebooks/01_data_exploration.ipynb
 notebooks/02_rfm_analysis.ipynb
 OR run scripts
